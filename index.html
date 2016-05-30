@@ -4,7 +4,34 @@
 	<title>Aula 5</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+	<script>
+		var meuNome = "Juliane";
 
+		function nomeSomaFn(a,b){
+			var soma = a + b;
+
+			//console.log("Olá " + meuNome + " sua soma é: " + soma);
+			//console.log("Olá " + meuNome + " sua soma é: " + soma);
+			//window.prompt("Olá " + meuNome + " sua soma é: " + soma);
+			var nome = window.prompt("Quem é você?");
+			//console.log("Olá " + nome);
+			//console.log("Letras: "+nome.length);
+
+			function condicao(){
+				if(!!nome.length > 2){
+					return "Olá "+ nome + ". Você tem " + nome.length + "letras";
+				}else if(nome.length <3 && nome.length>0){
+					return "Você preencheu seu nome errado.";
+				}
+				else{
+					return "Você não preencheu seu nome.";
+				}
+			}
+				console.log(condicao());
+		}
+
+		nomeSomaFn(10,20);
+	</script>
 </head>
 <body>
 		<h1>Olá</h1>
